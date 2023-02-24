@@ -27,7 +27,7 @@ class Strobogrammatic{
         }
         else{
             if(numVal.contains("0") || numVal.contains("1") || numVal.contains("8") || numVal.contains("6") || numVal.contains("9")){
-
+                
             }
             else{
                 if(numVal.contains("2") || numVal.contains("3") || numVal.contains("4") || numVal.contains("5") || numVal.contains("7")){
