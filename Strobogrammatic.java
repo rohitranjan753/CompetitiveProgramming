@@ -1,13 +1,13 @@
 import java.util.*;
 
-class Strobogrammatic{
+class Strobogrammatic {
 
-    static char rotate(char ch){
+    static char rotate(char ch) {
         switch (ch) {
             case '6':
-               return 9;
+                return 9;
             case '9':
-               return 6;
+                return 6;
             default:
                 return ch;
         }
@@ -17,32 +17,29 @@ class Strobogrammatic{
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
         String numVal = String.valueOf(num);
-        if(numVal.length() == 1){
-            if(numVal.contains("0") || numVal.contains("1") ||numVal.contains("8")){
+        if (numVal.length() == 1) {
+            if (numVal.contains("0") || numVal.contains("1") || numVal.contains("8")) {
                 System.out.println("Its a Strobogrammatic no");
-            }
-            else{
+            } else {
                 System.out.println("Its not a Strobogrammatic no");
             }
-        }
-        else{
-            if(numVal.contains("0") || numVal.contains("1") || numVal.contains("8") || numVal.contains("6") || numVal.contains("9")){
-                
-            }
-            else{
-                if(numVal.contains("2") || numVal.contains("3") || numVal.contains("4") || numVal.contains("5") || numVal.contains("7")){
+        } else {
+            if (numVal.contains("0") || numVal.contains("1") || numVal.contains("8") || numVal.contains("6")
+                    || numVal.contains("9")) {
+                System.out.println("Its a Strobogrammatic no");
+            } else {
+                if (numVal.contains("2") || numVal.contains("3") || numVal.contains("4") || numVal.contains("5")
+                        || numVal.contains("7")) {
                     System.out.println("Its not a Strobogrammatic no");
-                }
-                else{
+                } else {
                     StringBuffer s1 = new StringBuffer(numVal);
                     s1.reverse();
                     String s2 = s1.toString();
-                    for(int i=0;i<numVal.length();i++){
-                        s2 = s2+rotate(s1.charAt(i));
-                        if(numVal == s2){
+                    for (int i = 0; i < numVal.length(); i++) {
+                        s2 = s2 + rotate(s1.charAt(i));
+                        if (numVal == s2) {
                             System.out.println("Its a Strobogrammatic no");
-                        }
-                        else{
+                        } else {
                             System.out.println("Its not a Strobogrammatic no");
                         }
                     }
