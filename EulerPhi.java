@@ -16,7 +16,8 @@ class EulerPhi {
 
     public static void main(String[] args) {
         int n;
-        for (n = 1; n <= 10; n++)
-            System.out.println("phi(" + n + ") = " + phi(n));
+        System.out.println(phi(168));
+        // for (n = 1; n <= 88200; n++)
+        // System.out.println("phi(" + n + ") = " + phi(n));
     }
 }
