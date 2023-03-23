@@ -7,7 +7,7 @@ class LeadersElement {
     static void leaderElement(int array[]) {
         int leaderElementVal = array[0];
         for (int i = 1; i < array.length; i++) {
-            if (array[i] > leaderElementVal) {
+            if (array[i] < leaderElementVal) {
                 System.out.print(leaderElementVal + "->");
                 leaderElementVal = array[i];
             }
