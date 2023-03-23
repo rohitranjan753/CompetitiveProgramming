@@ -4,15 +4,18 @@ import java.util.*;
 
 class LeadersElement {
 
-    static void leaderElement(int array[]) {
-        int leaderElementVal = array[0];
-        for (int i = 1; i < array.length; i++) {
-            if (array[i] < leaderElementVal) {
-                System.out.print(leaderElementVal + "->");
+    static void leaderElement(int array[], int n) {
+        int leaderElementVal = array[n - 1];
+        int c = 1;
+        for (int i = n - 2; i >= 0; i--) {
+            if (array[i] > leaderElementVal) {
                 leaderElementVal = array[i];
+                c++;
+                System.out.print(leaderElementVal + "->");
             }
 
         }
+        System.out.println("leaders count" + c);
     }
 
     public static void main(String[] args) {
@@ -22,6 +25,6 @@ class LeadersElement {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-        leaderElement(arr);
+        leaderElement(arr, n);
     }
 }
