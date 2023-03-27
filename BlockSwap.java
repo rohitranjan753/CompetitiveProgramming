@@ -17,7 +17,7 @@ class BlockSwap {
         int temp = 0;
         int i, j;
         for (i = 0; i < index; i++) {
-            temp = array[i];
+            temp = array[0];
             for (j = 0; j < array.length - 1; j++) {
                 array[j] = array[j + 1];
             }
