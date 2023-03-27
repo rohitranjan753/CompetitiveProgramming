@@ -6,7 +6,13 @@ import java.util.*;
 class Equilibrium {
 
     static void EquilibriumIndex(int array[]) {
+        int sum=0;
+        int leftArraySum=0;
 
+        for (var i = 0; i < array.length; i++) {
+            var each = array[i];
+            
+        }
     }
 
     public static void main(String[] args) {
