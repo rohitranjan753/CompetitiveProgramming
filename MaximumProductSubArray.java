@@ -1,11 +1,9 @@
 // Maximum product of subarray
 
 import java.io.*;
-class MaximumProductSubArray{
-    // Java program to find maximum product subarray
 
-	/* Returns the product of max product subarray.*/
-	static int maxSubarrayProduct(int arr[])
+class MaximumProductSubArray {
+    static int maxSubarrayProduct(int arr[])
 	{
 		// Initializing result
 		int result = arr[0];
@@ -26,8 +24,7 @@ class MaximumProductSubArray{
 		return result;
 	}
 
-	// Driver Code
-	public static void main(String[] args)
+    public static void main(String[] args)
 	{
 		int arr[] = { 1, -2, -3, 0, 7, -8, -2 };
 		System.out.println("Maximum Sub array product is "
