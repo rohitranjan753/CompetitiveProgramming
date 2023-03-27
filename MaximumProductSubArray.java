@@ -1,7 +1,5 @@
 // Maximum product of subarray
 
-import java.io.*;
-
 class MaximumProductSubArray {
     static int maxSubarrayProduct(int arr[]) {
         // Initializing result
