@@ -8,7 +8,6 @@ class MaximumProductSubArray {
 
         for (int i = 0; i < n; i++) {
             int mul = arr[i];
-            // traversing in current subarray
             for (int j = i + 1; j < n; j++) {
                 result = Math.max(result, mul);
                 mul *= arr[j];
