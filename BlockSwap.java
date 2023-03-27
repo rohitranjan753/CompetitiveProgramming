@@ -25,7 +25,7 @@ class BlockSwap {
         }
 
         for (i = 0; i < array.length; i++) {
-            System.out.println();
+            System.out.print(array[i] + " ");
         }
     }
 }
