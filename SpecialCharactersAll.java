@@ -12,15 +12,16 @@ class SpecialCharactersAll {
         String SpecialCharacters = "";
         String normalChar = "";
 
-        for (int i = 0; i < chArr.length; i++) {
-            if (chArr[i] == '-') {
-                hypenChar = hypenChar + chArr[i];
-                chArr[i] = ' ';
+        for (int i = 0; i < str.length(); i++) {
+            if (!Character.isDigit(str.charAt(i))
+                    && !Character.isLetter(str.charAt(i))
+                    && !Character.isWhitespace(str.charAt(i))) {
+                normalChar = normalChar + str.charAt(i);
             } else {
-                normalChar = normalChar + chArr[i];
+                SpecialCharacters = SpecialCharacters + str.charAt(i);
             }
         }
-        String finalStr = hypenChar + normalChar;
+        String finalStr = SpecialCharacters + normalChar;
         System.out.println("finalStr " + finalStr);
 
     }
