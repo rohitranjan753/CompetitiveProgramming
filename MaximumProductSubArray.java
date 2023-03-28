@@ -5,7 +5,6 @@ class MaximumProductSubArray {
         // Initializing result
         int result = arr[0];
         int n = arr.length;
-
         for (int i = 0; i < n; i++) {
             int mul = arr[i];
             for (int j = i + 1; j < n; j++) {
