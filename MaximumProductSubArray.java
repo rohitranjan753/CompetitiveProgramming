@@ -12,7 +12,6 @@ class MaximumProductSubArray {
                 result = Math.max(result, mul);
                 mul *= arr[j];
             }
-            // updating the result for (n-1)th index.
             result = Math.max(result, mul);
         }
         return result;
