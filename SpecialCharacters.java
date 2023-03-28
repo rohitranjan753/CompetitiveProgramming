@@ -9,7 +9,6 @@ class SpecialCharacters {
         String str = sc.nextLine();
 
         char chArr[] = str.toCharArray();
-        System.out.println(chArr);
         String hypenChar = "";
         String normalChar = "";
 
@@ -22,6 +21,7 @@ class SpecialCharacters {
             }
         }
         String finalStr = hypenChar + normalChar;
+        System.out.println("finalStr " + finalStr);
 
     }
 }
