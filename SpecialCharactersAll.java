@@ -16,9 +16,9 @@ class SpecialCharactersAll {
             if (!Character.isDigit(str.charAt(i))
                     && !Character.isLetter(str.charAt(i))
                     && !Character.isWhitespace(str.charAt(i))) {
-                normalChar = normalChar + str.charAt(i);
-            } else {
                 SpecialCharacters = SpecialCharacters + str.charAt(i);
+            } else {
+                normalChar = normalChar + str.charAt(i);
             }
         }
         String finalStr = SpecialCharacters + normalChar;
