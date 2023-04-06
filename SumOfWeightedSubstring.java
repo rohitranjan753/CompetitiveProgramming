@@ -9,12 +9,12 @@ import java.util.*;
 
 class SumOfWeightedSubstring {
     static void weightedSubstring(String stringValue, int K, String Q) {
-        char string[] = stringValue.toCharArray();
+        // char string[] = stringValue.toCharArray();
         String result = "";
-        for (int i = 0; i < string.length; i++) {
+        for (int i = 0; i < stringValue.length(); i++) {
             int sum = 0;
             String s = "";
-            for (int j = i; j < string.length; j++) {
+            for (int j = i; j < stringValue.length(); j++) {
                 int currentPos = stringValue.charAt(j) - 'a';
                 sum += Q.charAt(currentPos) - '0';
                 s += stringValue.charAt(j);
