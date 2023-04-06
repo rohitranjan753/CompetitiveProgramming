@@ -33,7 +33,7 @@ class LongestPalindromeSubstring {
                     }
                 }
             }
-            if (count > maxcount) { // if the count is not equal to the length of the original string
+            if (count > maxcount) {
                 maxcount = count;
                 start = prev + 2;
                 end = next - 2;
