@@ -16,9 +16,7 @@ class LongestPalindromeSubstring {
                         count += 2;
                         prev -= 2;
                         next += 2;
-                    }
-
-                    else {
+                    } else {
                         break;
                     }
                 }
