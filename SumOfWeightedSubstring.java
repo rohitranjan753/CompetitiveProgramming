@@ -7,26 +7,26 @@
 
 import java.util.*;
 
-class SumOfWeightedSubstring {
+public class SumOfWeightedSubstring {
     static void weightedSubstring(String stringValue, int K, String Q) {
         // char string[] = stringValue.toCharArray();
-        String result = "";
-        for (int i = 0; i < stringValue.length(); i++) {
+        int count = 0;
+        for (int i = 0; i < stringValue.length(); ++i) {
             int sum = 0;
             String s = "";
-            for (int j = i; j < stringValue.length(); j++) {
+            for (int j = i; j < stringValue.length(); ++j) {
                 int currentPos = stringValue.charAt(j) - 'a';
                 sum += Q.charAt(currentPos) - '0';
                 s += stringValue.charAt(j);
 
                 if (sum <= K) {
-                    result = s;
+                    count++;
                 } else {
                     break;
                 }
             }
         }
-        System.out.println("Length of Wieghted Subarray is:" + result.length());
+        System.out.println("Length of Wieghted Subarray is:" + count);
     }
 
     public static void main(String[] args) {

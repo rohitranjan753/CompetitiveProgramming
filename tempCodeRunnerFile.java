@@ -1,1 +1,1 @@
-BitwisePalindrome
+SumOfWeightedSubstring
