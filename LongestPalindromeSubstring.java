@@ -10,7 +10,6 @@ class LongestPalindromeSubstring {
                 prev = mid - 1;
                 next = mid + 1;
                 count = 0;
-
                 while (prev >= 0 && next < n) {
                     if (arr[prev] == arr[next]) {
                         count += 2;
@@ -39,7 +38,6 @@ class LongestPalindromeSubstring {
                 start = prev + 2;
                 end = next - 2;
             }
-
         }
         for (int i = start; i <= end; i++) {
             if (arr[i] == '$')
