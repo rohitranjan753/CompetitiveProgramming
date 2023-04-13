@@ -3,6 +3,9 @@
 import java.io.*;
 
 class DepthOfBinaryTree{
+    // function to return max
+    // of left subtree height
+    // or right subtree height
     static int findDepthRec(String tree,
                             int n, int index)
     {
