@@ -50,10 +50,10 @@ class RatMaze {
 
             sol[x][y] = 1;
 
-            if (ratMazeUtil(maze, x + 1, y, sol))
+            if (ratMazeUtil(maze, x, y + 1, sol))
                 return true;
 
-            if (ratMazeUtil(maze, x, y + 1, sol))
+            if (ratMazeUtil(maze, x + 1, y, sol))
                 return true;
 
             sol[x][y] = 0;
