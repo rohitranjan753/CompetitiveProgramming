@@ -1,39 +1,42 @@
-import
-java.util
+import java.util.Scanner;
 
 public class Strobo {
-public static void main(String[] args) {
-String n = "9006";
-System.out.println
-("Is " + n + " is Strobogrammatic? "
-+ is_Strobogrammatic (
-}
+    public static void main(String[] args) {
+        int ld, res = 0, flag = 0;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int n = sc.nextInt();
+        int temp = n;
+        String s = Integer.toString(n);
+        int length = s.length();
+        if (length == 1) {
+            if (s.charAt(0) == '0' || s.charAt(0) == '1' || s.charAt(0) == '8')
+                System.out.println(n + " is a Strobogrammatic number");
+            else
+                System.out.println(n + " is not Strobogrammatic number");
+        } else {
+            char[] ch = s.toCharArray();
 
-public static
-boolean is_Strobogrammatic (String n)
-if (n == null ||
-n.length () == 0)
-return true;
+            for (int i = 0; i < s.length(); i++) {
+                if (ch[i] == '2' || ch[i] == '3' || ch[i] == '4' || ch[i] == '5' || ch[i] == '7') {
+                    flag = 1;
+                } else {
+                    while (n > 0) {
+                        ld = n % 10;
+                        if (ld == 6) {
+                            ld = 9;
+                        } else if (ld == 9) {
+                            ld = 6;
+                        }
+                        res = (res * 10) + ld;
+                        n /= 10;
+                    }
+                }
+            }
+            if (res == temp && flag == 0)
+                System.out.println(temp + " is Strobogrammatic number");
+            else
+                System.out.println(temp + " is not Strobpgrammatic number");
+        }
+    }
 }
-
-HashMap
-< Character, Character > map = new
-HashMap < Character, Character >
-map.put
-('0', '
-map.put
-('1', '
-© 2016
-    SMART Training
-    Resources Pvt.Ltd.map.put('8','map.put('6','map.put('9','
-int
-left = 0;
-int
-right = n.length ()1;while(left<=right)
-    {
-if (!
-map.containsKey n.charAt (right)) ||
-n.charAt (left) != map.get n.charAt (right)))
-return false;
-}left++;right
-}return true;}}
