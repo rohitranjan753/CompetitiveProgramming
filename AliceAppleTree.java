@@ -26,22 +26,22 @@ class AliceAppleTree {
     // Driver code
     public static void main(String[] args) {
         // No. of red apple for gift
-        int M = 10;
+        int M = 13;
 
         // No. of red apple in each tree
-        int K = 15;
+        int K = 8;
 
         // No. of tree in North
-        int N = 0;
+        int N = 12;
 
         // No. of tree in South
         int S = 1;
 
         // No. of tree in West
-        int W = 0;
+        int W = 5;
 
         // No. of tree in East
-        int E = 0;
+        int E = 8;
 
         // Function Call
         int ans = minApples(M, K, N, S, W, E);

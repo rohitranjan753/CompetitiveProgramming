@@ -3,7 +3,7 @@ import java.util.*;
 class LongestSequence {
     public static void main(String[] args) {
         int prev = 0, curr = 0, max = 0;
-        int n = 255;
+        int n = 1775;
         while (n > 0) {
             if ((n & 1) == 1) {
                 curr++;

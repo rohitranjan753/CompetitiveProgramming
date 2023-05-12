@@ -14,8 +14,8 @@ class Josephus {
     }
 
     public static void main(String[] args) {
-        int n = 10;
-        int k = 3;
+        int n = 23;
+        int k = 4;
         k--;
         int index = 0;
 
