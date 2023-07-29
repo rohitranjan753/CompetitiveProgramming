@@ -1,0 +1,76 @@
+Java Introduction, Features, Strcuture, Data Types
+Basic I/O, Operators
+Decision making and Control structures
+Introduction to Algorithms
+Time & Space complexity-1.1
+Time & Space complexity-1.2
+
+
+Simple Sieve                    T=n*log(log(n))     S=O(n)
+Segmented & Incremental Sieve   T=O(sqrt(n))        S=O(1)
+Euler's phi Algorithm
+Strobogrammatic Number
+Remainder Theorem
+Toggle the switch & Alice Apple tree
+Binary Palindrome
+Booth's Algorithm
+Euclid's Algorithm
+Karatsuba Algorithm
+
+
+
+Longest Sequence of 1 after flipping a bit      Time Complexity: O(log2n)
+                                                Auxiliary Space: O(1)
+Swap two nibbles in a byte                      Time Complexity: O(1)
+                                                Auxiliary Space: O(1)
+Block Swap Algorithm                            Time Complexity: O(n)
+                                                Auxiliary Space: O(log n)
+Max product subarray                            Time Complexity: O(N2)
+                                                Auxiliary Space: O(1)
+Maximum sum of hour glass in matrix             Time complexity: O(R x C).
+                                                Auxiliary Space: O(1)
+Max Equlibrium Sum                              Time Complexity: O(n2) 
+                                                Auxiliary Space: O(n)
+Leaders in array                                Time Complexity: O(N)
+                                                Auxiliary Space: O(1)
+Majority element                                Time Complexity: O(n*n)
+                                                Auxiliary Space: O(1)
+Lexicographically first palindromic string      Time Complexity : O(n)
+Natural Sort order
+Quick, Selection Sort                           T=O(N * logN)      Selection Sort=O(n2) in all three cases
+Weighted substring                              T=O(N^2)
+Move hyphen to beginning                        T=O(n)      S=O(1)
+Manacher's Algorithm                            T=[O(n3)] and quadratic [O(n2)]
+Sorted Unique Permutation                       Time Complexity: O(n*m) where n is the size of the array and m is the number of permutations possible. 
+                                                Auxiliary Space: O(n)
+Maneuvering                                     Time Complexity: O(2^N)
+                                                Auxiliary Space: O(N + M)
+Combination                                     Time Complexity: O(n^2)
+                                                Auxiliary Space: O(r)
+Josephus trap                                   Time Complexity: O(log n)
+                                                Auxiliary Space: O(1)
+Maze Solving                                    Time Complexity: O(2^(n^2)). 
+                                                Auxiliary Space: O(n^2)
+N Queens                    T=O(N^2)            S=N^2
+Warnsdorff’s Algorithm                          Time complexity   –   O(N^2 * log(N))
+                                                Space complexity  –  O(N^2)
+Hamiltonian Cycle                               Time Complexity : O(N!), where N is number of vertices.
+                                                Auxiliary Space : O(1), since no extra space used.
+Kruskal's Algorithm
+Activity Selection Problem
+Graph Coloring                                  Time Complexity: O(V^2 + E) in worst case.
+                                                Space Complexity : O(1) ,as we are not using any extra space.
+                                                
+Huffman Coding                                  Time complexity: O(nlogn) where n is the number of unique characters.
+                                                Space complexity :- O(N)
+
+Booths ac qn qn+1
+Karatsuba a b c d
+Alice Apple
+Remainder Theorem
+
+
+1 2 4 8 16 32 64 128 256 512 1024 2048
+
+
+
